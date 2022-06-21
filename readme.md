@@ -137,7 +137,8 @@ mfs.deploy(app_name=app_name,
 ```
 
 <h2>Use the model with the new data</h2>
-```` py
+
+```py
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
@@ -183,7 +184,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 query_input = pd.DataFrame(X_test).iloc[[15]].to_json(orient="split")
 prediction = query_endpoint(app_name=app_name, input_json=query_input)
-
-```
-
 ```
