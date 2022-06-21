@@ -109,12 +109,20 @@ with mlflow.start_run(run_name="aws-mlflow-experiment") as run:
     print(f"runID: {run_id}")
 `````
 
-Open the <i>Mlflow</i> user interface in <i>http://127.0.0.1:5000</i>.
+- Open the <i>Mlflow</i> user interface in <i>http://127.0.0.1:5000</i>.
 
 <h2>Deploy the model to AWS</h2>
 <p><h3>Build a Docker Image and push it to AWS ECR</h3>
 
+![Docker-Image](https://user-images.githubusercontent.com/51021282/174871564-6351c034-f469-4167-b4ef-8fece5cc9c3e.png)
+
+
+![AWS-ECR-Image](https://user-images.githubusercontent.com/51021282/174871642-022f68bf-2d83-4dc4-98a9-6b1eb80d73b5.png)
+
+
 <p><h3>Deploy image to Sagemaker</h3>
+
+![sagemaker-endpoint](https://user-images.githubusercontent.com/51021282/174871702-684b88f1-e609-4407-be48-875eee4ba52b.jpeg)
 
 ```py
 import mlflow.sagemaker as mfs
@@ -138,6 +146,10 @@ mfs.deploy(app_name=app_name,
            image_url=image_url)
 
 ```
+
+![sagemaker-endpoint-aws](https://user-images.githubusercontent.com/51021282/174871794-d99b571f-090c-4ccf-8bb6-b7a35e4f8367.png)
+
+
 
 <h2>Use the model with the new data</h2>
 
