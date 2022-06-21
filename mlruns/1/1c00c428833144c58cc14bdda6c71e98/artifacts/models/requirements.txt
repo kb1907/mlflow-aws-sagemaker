@@ -1,0 +1,4 @@
+mlflow
+catboost==1.0.6
+cloudpickle==2.1.0
+scikit-learn==1.1.1
