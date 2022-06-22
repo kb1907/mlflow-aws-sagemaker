@@ -4,7 +4,6 @@ Mlflow- AWS Sagemaker folder for MLOPS 2022 Data Scientist Trainees and DS Aspir
 
 ![MLflow-models](https://user-images.githubusercontent.com/51021282/174871238-7350487d-a4ac-42db-afd4-3c5232f01310.jpeg)
 
-
 New environment
 
 ```bash
