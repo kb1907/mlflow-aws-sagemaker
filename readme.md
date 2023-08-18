@@ -9,6 +9,7 @@ New environment
     conda create -n mlops-aws-docker python=3.9 -y
 ```
 
+
 Activate the environment
 
 ```bash
