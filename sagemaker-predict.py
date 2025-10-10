@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import json
 import boto3
-
 global app_name
 global region
 app_name = 'model-application'
