@@ -43,7 +43,7 @@ oneliner updates for readme
 git add . && git commit -m "update Readme.md"
 ```
 
-pushing changes to new repo
+pushing changes to the new repo
 
 `````bash
 git remote add origin git@github.com:kb1907/mlflow-aws-sagemaker.git
