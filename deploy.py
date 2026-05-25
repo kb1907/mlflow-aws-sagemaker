@@ -11,6 +11,7 @@ tag_id = '1.26.1'
 
 image_url = aws_id + '.dkr.ecr.' + region + '.amazonaws.com/mlflow-pyfunc:' + tag_id
 
+
 mfs.deploy(app_name=app_name, 
            model_uri=model_uri, 
            region_name=region, 
