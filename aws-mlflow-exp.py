@@ -48,5 +48,6 @@ with mlflow.start_run(run_name="aws-mlflow-experiment") as run:
     mlflow.sklearn.log_model(cat_cls, artifact_path="models")
 
     mlflow.end_run()
+    
     print(f"default artifacts URI: '{mlflow.get_artifact_uri()}'")
     print(f"runID: {run_id}")
