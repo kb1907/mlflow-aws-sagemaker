@@ -52,7 +52,7 @@ git push -u origin main
 
 Setup AWS
 
-Prepare MlFlow Experiment
+Prepare MLflow Experiment
 
 ```` py
 import mlflow
