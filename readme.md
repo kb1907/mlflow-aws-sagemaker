@@ -22,7 +22,7 @@ Requirements File
     touch requirements.txt
 ```
 
-Connect to Github
+Connect to GitHub
 
 ```bash
 git init
