@@ -184,7 +184,7 @@ client = boto3.session.Session().client("sagemaker-runtime", region)
     print("Received response: {}".format(preds))
     return preds
 
-## check endpoint status
+## Check endpoint status
 
 print("Application status is: {}".format(check_status(app_name)))
 
@@ -195,7 +195,7 @@ X= df.drop('HeartDisease', axis=1)
 y= df['HeartDisease']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-## create test data and make inference from endpoint
+## Make test data and make inference from endpoint
 
 query_input = pd.DataFrame(X_test).iloc[[15]].to_json(orient="split")
 prediction = query_endpoint(app_name=app_name, input_json=query_input)
